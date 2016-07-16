@@ -8,7 +8,9 @@
     "authors": [
         {
             "name": "Darjan Pezer",
-            "homepage": "http://pezer.eu"
+            "email": "darjan@pezer.eu",
+            "homepage": "http://pezer.eu",
+            "role": "Developer"
         }
     ],
     "support": {
@@ -17,5 +19,6 @@
     "require": {
         "composer/installers": "*",
         "silverstripe/framework": ">=3.0"
-    }
+    },
+    "minimum-stability": "dev"
 }
