@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "The SilverStripe SilverStripe Bootstrap 3 starter theme",
     "type": "silverstripe-theme",
-    "keywords": ["silverstripe", "theme"],
+    "keywords": ["silverstripe", "theme", "bootstrap", "bootstrap 3", "sass", "grunt"],
     "license": "MIT",
     "authors": [
         {
