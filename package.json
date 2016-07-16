@@ -1,0 +1,16 @@
+{
+  "name": "ssbs",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-sass": "~1.0.0",
+    "grunt-contrib-cssmin": "~1.0.1",
+    "grunt-contrib-concat": "~1.0.1",
+    "grunt-contrib-uglify": "~1.0.1",
+    "grunt-contrib-watch": "~1.0.0"
+  },
+  "description": "* Copy the theme into the `themes/` directory of your SilverStripe project.  If you've named it correctly, there should be a directory called `themes/ssbs/templates`.",
+  "main": "Gruntfile.js",
+  "author": "Darjan Pezer",
+  "license": "MIT"
+}

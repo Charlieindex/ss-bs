@@ -1,0 +1,17 @@
+{
+    "name": "darianno/ss-bs",
+    "description": "The SilverStripe SilverStripe Bootstrap Starter theme",
+    "type": "silverstripe-theme",
+    "keywords": ["silverstripe", "theme"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Darjan Pezer",
+            "homepage": "http://pezer.eu"
+        }
+    ],
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": ">=3.0"
+    }
+}

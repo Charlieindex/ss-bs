@@ -1,0 +1,66 @@
+/* Extra Small Devices, Phones */
+@mixin min-xs {
+  @media only screen and (min-width: #{$screen-xs}){
+    @content;
+  }
+}
+
+/* Small Devices, Tablets */
+@mixin min-sm {
+  @media only screen and (min-width: #{$screen-sm}){
+    @content;
+  }
+}
+
+/* Medium Devices, Desktops */
+@mixin min-md {
+  @media only screen and (min-width: #{$screen-md}){
+    @content;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@mixin min-lg {
+  @media only screen and (min-width: #{$screen-lg}){
+    @content;
+  }
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@mixin max-lg {
+  @media only screen and (max-width: #{$screen-lg}){
+    @content;
+  }
+}
+
+/* Medium Devices, Desktops */
+@mixin max-md {
+  @media only screen and (max-width: #{$screen-md}){
+    @content;
+  }
+}
+
+/* Small Devices, Tablets */
+@mixin max-sm {
+  @media only screen and (max-width: #{$screen-sm}){
+    @content;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@mixin max-xs {
+  @media only screen and (max-width: #{$screen-xs}){
+    @content;
+  }
+}
+
+/* Retina images */
+@mixin image-2x($image, $width, $height) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}

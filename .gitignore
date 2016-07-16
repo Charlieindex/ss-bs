@@ -1,0 +1,8 @@
+### OSX template
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+### Node modules and sass ###
+/.sass-cache
+/node_modules
