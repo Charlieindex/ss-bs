@@ -1,5 +1,6 @@
 {
     "name": "darianno/ss-bs",
+    "version": "1.0.0",
     "description": "The SilverStripe SilverStripe Bootstrap 3 starter theme",
     "type": "silverstripe-theme",
     "keywords": ["silverstripe", "theme"],
@@ -10,6 +11,9 @@
             "homepage": "http://pezer.eu"
         }
     ],
+    "support": {
+        "issues": "http://github.com/darianno/ss-bs/issues"
+    },
     "require": {
         "composer/installers": "*",
         "silverstripe/framework": ">=3.0"
