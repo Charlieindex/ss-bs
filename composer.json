@@ -1,9 +1,9 @@
 {
     "name": "darianno/ss-bs",
-    "description": "The SilverStripe SilverStripe Bootstrap Starter theme",
+    "description": "The SilverStripe SilverStripe Bootstrap 3 starter theme",
     "type": "silverstripe-theme",
     "keywords": ["silverstripe", "theme"],
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "authors": [
         {
             "name": "Darjan Pezer",
