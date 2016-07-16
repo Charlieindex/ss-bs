@@ -9,9 +9,6 @@
 * [Node](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/package/plugin) (Node is used for dev tasks such as compiling sass, bundling and minifying js, etc. Npm is used for package management for node components.)
 * [Grunt](http://gruntjs.com/) (install grunt with command `npm install -g grunt-cli`)
 
-### Install with composer
-`composer require darianno/ss-bs`
-
 ### Theme includes
 * [Bootstrap](http://getbootstrap.com/) 3.3.6 (Sass)
 * [jQuery](https://jquery.com/) 2.2.4
@@ -22,7 +19,9 @@
 
 ### Installation Instructions
 
- * Copy the theme into the `themes/` directory of your SilverStripe project.  If you've named it correctly, there should be a directory called `themes/ss-bs/templates`.
+ * Install with composer `composer require darianno/ss-bs` or ...
+
+ * ... copy the theme into the `themes/` directory of your SilverStripe project.  If you've named it correctly, there should be a directory called `themes/ss-bs/templates`.
 
  * Add the following to your `mysite/_config.php` file.  Remove any existing `SSViewer::set_theme` lines.
 

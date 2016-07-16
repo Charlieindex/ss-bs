@@ -56,6 +56,27 @@
   }
 }
 
+/* Max custom */
+@mixin max-custom($max-width) {
+  @media only screen and (max-width: $max-width){
+    @content;
+  }
+}
+
+/* Min custom */
+@mixin min-custom($min-width) {
+  @media only screen and (min-width: $min-width){
+    @content;
+  }
+}
+
+/* Min-Max custom */
+@mixin min-max-custom($min-width, $max-width) {
+  @media only screen and (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
+}
+
 /* Retina images */
 @mixin image-2x($image, $width, $height) {
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){

@@ -11,7 +11,7 @@
   $MetaTags(false)
   <title><% if $URLSegment == 'home' %>$SiteConfig.Title<% else %><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> - $SiteConfig.Title<% end_if %></title>
   <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,700,600&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  <% require css('themes/ssbs/css/style.min.css') %>
+  <% require css('themes/ss-bs/css/style.min.css') %>
   <!-- favs -->
 	<link rel="apple-touch-icon" sizes="180x180" href="$ThemeDir/ico/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="$ThemeDir/ico/favicon-32x32.png" sizes="32x32">
@@ -28,6 +28,6 @@
 <![endif]-->
 $Layout
 <!-- Javascripts Below Footer -->
-<% require javascript('themes/ssbs/js/app.min.js') %>
+<% require javascript('themes/ss-bs/js/app.min.js') %>
 </body>
 </html>
