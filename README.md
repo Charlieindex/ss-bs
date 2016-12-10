@@ -1,21 +1,17 @@
-# SilverStripe Bootstrap 3 starter theme
+# SilverStripe Bootstrap 4 (Alpha 5) starter theme - Gulp
 
-##### This is [Bootstrap 3](http://getbootstrap.com/) starter theme for [SilverStripe](http://silverstripe.org/) built by [Darjan Pezer](mailto:darjan@pezer.eu).
-###### Current version: 1.0
+##### This is [Bootstrap 4](https://v4-alpha.getbootstrap.com/) starter theme for [SilverStripe](http://silverstripe.org/) built by [Darjan Pezer](mailto:darjan@pezer.eu).
+###### Version: 2.0
 
 ### Requirements
 * [SilverStripe](http://silverstripe.org/) 3.0 or above (both framework and cms)
 * PHP 5.3
 * [Node](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/package/plugin) (Node is used for dev tasks such as compiling sass, bundling and minifying js, etc. Npm is used for package management for node components.)
-* [Grunt](http://gruntjs.com/) (install grunt with command `npm install -g grunt-cli`)
+* [Gulp](http://gulpjs.com/) (install grunt with command `npm install -g gulp`)
 
 ### Theme includes
-* [Bootstrap](http://getbootstrap.com/) 3.3.6 (Sass)
-* [jQuery](https://jquery.com/) 2.2.4
-* [Retina.js](https://imulus.github.io/retinajs/) 1.3.0
-* [Modernizr](https://modernizr.com/) 3.3.1 custom
-* [FontAwesome](http://fontawesome.io/) 4.6.3
-* Favicons generated with [realfavicongenerator.net](http://realfavicongenerator.net) (put the downloads into `ico`-folder)
+* [Bootstrap](https://v4-alpha.getbootstrap.com/) v4.0.0-alpha.5 (Sass)
+* [jQuery](https://jquery.com/) 3.0.0
 
 ### Installation Instructions
 
@@ -29,11 +25,18 @@
 
 * Add the following to your `mysite/code/Page.php` file inside init() function:
 
-		Requirements::block(SAPPHIRE_DIR .'/thirdparty/jquery/jquery.js');
+		Requirements::combine_files(
+      'scripts.combined.js',
+      array(
+        'themes/ss-bs/javascript/jquery.min.js',
+        'themes/ss-bs/javascript/tether.min.js',
+        'themes/ss-bs/javascript/bootstrap.min.js',
+        'themes/ss-bs/javascript/ie10-viewport-bug-workaround.js'
+      )
+    );
 
 ### Compiling CSS and JS
 
 * Install all required npm plugins with `npm install` command
-* Run `grunt watch`
-* Save your JS files into `themes/ss-bs/js-src/` (new JS files include to `Gruntfile.js` after line 28)
-* Put your CSS/SCSS files into `themes/ss-bs/sass/` and call them in `themes/ss-bs/sass/style.scss`
+* Run command `gulp watch` inside `npm` folder
+* Put your CSS/SCSS files into `themes/ss-bs/sass/` and import them in `themes/ss-bs/sass/style.scss`
