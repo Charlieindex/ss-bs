@@ -21,12 +21,12 @@
 
  * Add the following to your `mysite/_config.php` file.  Remove any existing `SSViewer::set_theme` lines.
 
-		SSViewer::set_theme("ss-bs");
+    SSViewer::set_theme("ss-bs");
 
 * Add the following to your `mysite/code/Page.php` file inside init() function:
 
     ```php
-		Requirements::combine_files(
+      Requirements::combine_files(
       'scripts.combined.js',
       array(
         'themes/ss-bs/javascript/jquery.min.js',
