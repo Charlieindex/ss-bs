@@ -1,9 +1,9 @@
 {
     "name": "darianno/ss-bs",
-    "version": "1.0.0",
-    "description": "The SilverStripe SilverStripe Bootstrap 3 starter theme",
+    "version": "2.0.0",
+    "description": "The SilverStripe SilverStripe Bootstrap 4 starter theme",
     "type": "silverstripe-theme",
-    "keywords": ["silverstripe", "theme", "bootstrap", "bootstrap 3", "sass", "grunt", "scss"],
+    "keywords": ["silverstripe", "theme", "bootstrap", "bootstrap 4", "sass", "gulp", "scss"],
     "license": "BSD-3-Clause",
     "authors": [
         {
