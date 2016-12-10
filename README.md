@@ -7,7 +7,7 @@
 * [SilverStripe](http://silverstripe.org/) 3.0 or above (both framework and cms)
 * PHP 5.3
 * [Node](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/package/plugin) (Node is used for dev tasks such as compiling sass, bundling and minifying js, etc. Npm is used for package management for node components.)
-* [Gulp](http://gulpjs.com/) (install grunt with command `npm install -g gulp`)
+* [Gulp](http://gulpjs.com/) (install gulp with command `npm install -g gulp`)
 
 ### Theme includes
 * [Bootstrap](https://v4-alpha.getbootstrap.com/) v4.0.0-alpha.5 (Sass)
@@ -25,6 +25,7 @@
 
 * Add the following to your `mysite/code/Page.php` file inside init() function:
 
+    ```php
 		Requirements::combine_files(
       'scripts.combined.js',
       array(
@@ -34,8 +35,9 @@
         'themes/ss-bs/javascript/ie10-viewport-bug-workaround.js'
       )
     );
+    ```
 
-### Compiling CSS and JS
+### Compiling CSS
 
 * Install all required npm plugins with `npm install` command
 * Run command `gulp watch` inside `npm` folder
