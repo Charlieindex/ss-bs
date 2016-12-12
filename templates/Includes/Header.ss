@@ -1,19 +1,16 @@
 <header class="header">
-	<!-- Fixed navbar -->
-	<nav class="navbar navbar-inverse">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="$BaseHref">$SiteConfig.Title</a>
-			</div>
-			<div id="navbar" class="collapse navbar-collapse">
-			<% include Navigation %>
-			</div>
-		</div>
-	</nav>
+  <nav class="navbar navbar-light bg-faded">
+  	<div class="container">
+	    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"></button>
+	    <div class="collapse navbar-toggleable-xs" id="navbar-header">
+	      <a class="navbar-brand" href="$BaseHref">$SiteConfig.Title</a>
+	      <% include Navigation %>
+				<% if $SearchForm %>
+	      <div class="form-inline float-xs-right">
+	        $SearchForm
+	      </div>
+				<% end_if %>
+	    </div>
+	  </div>
+  </nav> <!-- /navbar -->
 </header>

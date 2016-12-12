@@ -3,9 +3,6 @@
 <section id="main">
 	<div class="container">
 		<div class="row">
-			<% if $SearchForm %>
-			$SearchForm
-			<% end_if %>
 			<% if $SideBar %>
 			<div class="col-md-2">
 				<% include SideBar %>
