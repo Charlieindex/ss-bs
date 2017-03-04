@@ -1,7 +1,7 @@
-# SilverStripe Bootstrap 4 (Alpha 5) starter theme - Gulp
+# SilverStripe Bootstrap 4 (Alpha 6) starter theme - Gulp
 
 ##### This is [Bootstrap 4](https://v4-alpha.getbootstrap.com/) starter theme for [SilverStripe](http://silverstripe.org/) built by [Darjan Pezer](mailto:darjan@pezer.eu).
-###### Version: 2.0
+###### Version: 2.1
 
 ### Requirements
 * [SilverStripe](http://silverstripe.org/) 3.0 or above (both framework and cms)
@@ -10,8 +10,8 @@
 * [Gulp](http://gulpjs.com/) (install gulp with command `npm install -g gulp`)
 
 ### Theme includes
-* [Bootstrap](https://v4-alpha.getbootstrap.com/) v4.0.0-alpha.5 (Sass)
-* [jQuery](https://jquery.com/) 3.0.0
+* [Bootstrap](https://v4-alpha.getbootstrap.com/) v4.0.0-alpha.6 (Sass)
+* [jQuery](https://jquery.com/) 3.1.1
 
 ### Installation Instructions
 
@@ -26,13 +26,14 @@
 * Add the following to your `mysite/code/Page.php` file inside init() function:
 
     ```php
+      $cur_theme = SSViewer::current_theme();
       Requirements::combine_files(
       'scripts.combined.js',
       array(
-        'themes/ss-bs/javascript/jquery.min.js',
-        'themes/ss-bs/javascript/tether.min.js',
-        'themes/ss-bs/javascript/bootstrap.min.js',
-        'themes/ss-bs/javascript/ie10-viewport-bug-workaround.js'
+        'themes/'.$cur_theme.'/javascript/jquery.min.js',
+        'themes/'.$cur_theme.'/javascript/tether.min.js',
+        'themes/'.$cur_theme.'/javascript/bootstrap.min.js',
+        'themes/'.$cur_theme.'/javascript/ie10-viewport-bug-workaround.js'
       )
     );
     ```
